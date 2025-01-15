@@ -105,3 +105,162 @@ form button:hover {
     cursor: pointer;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(24, 22, 22, 0.383), rgba(204, 104, 86, 0.589)), url("./images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding: 2rem 5rem;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav div h1 {
+    font-weight: 800;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: .5s ease-in-out;
+}
+
+
+.header-content {
+    color: #ffffff;
+    width: 50%;
+    position: relative;
+    top: 23rem;
+}
+
+.header-content h1 {
+    font-weight: 800;
+    color: rgb(190, 47, 47);
+    margin-bottom: .5rem;
+}
+
+.header-content p {
+    color: whitesmoke;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+input[type=text] {
+    padding: 1.5rem;
+    width: 50%;
+    display: block;
+    margin-bottom: .5rem;
+    outline: none;
+}
+
+input[type=text]::placeholder {
+    font-size: 1rem;
+}
+
+form button {
+    background-color: rgb(190, 47, 47);
+    color: #fff;
+    padding: 1.5rem 7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: none;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: rgb(190, 47, 47);
+    cursor: pointer;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5rem;
+    background-color: #10bb52bd;
+    margin-top: 2rem;
+}
+
+.about-us .about-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-us .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .about-image img {
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about-us .about-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-us .about-image img {
+        width: 100%;
+    }
+}
